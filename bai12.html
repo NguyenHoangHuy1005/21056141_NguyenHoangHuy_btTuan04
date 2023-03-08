@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+          position: absolute;
+          width: 100px;
+          height: 50px;
+          left: 0px;
+          top: 0px;
+          background-color: aqua;
+        }
+         @-webkit-keyframes scroll {
+        to {
+          -webkit-transform: rotate(-45deg);
+        }
+      }
+      @-moz-keyframes scroll {
+        to {
+          -moz-transform: rotate(-45deg);
+        }
+      }
+      @-o-keyframes scroll {
+        to {
+          -o-transform: rotate(-45deg);
+        }
+      }
+      @keyframes scroll {
+        to {
+          left: 100%;
+          transform: rotate(-45deg);
+        }
+      }
+      div {
+        -webkit-animation-name: scroll;
+        -moz-animation-name: scroll;
+        -o-animation-name: scroll;
+        animation-name: scroll;
+        -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+        -o-animation-duration: 5s;
+        animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -moz-animation-timing-function: ease-in-out;
+        -o-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        animation-direction: alternate;
+      }
+    </style>
+</head>
+<body>
+    <div class="text">
+
+    </div>
+</body>
+</html>
